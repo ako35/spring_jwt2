@@ -1,0 +1,346 @@
+2023-01-24 07:49:08,839 INFO  [restartedMain] com.tpe.SpringJwt2Application:Starting SpringJwt2Application using Java 11.0.16.1 on DESKTOP-5OH89VO with PID 43468 (C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes started by alikc in C:\Users\alikc\IdeaProjects\spring_jwt2)
+2023-01-24 07:49:08,841 INFO  [restartedMain] com.tpe.SpringJwt2Application:No active profile set, falling back to 1 default profile: "default"
+2023-01-24 07:49:08,936 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-24 07:49:08,937 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-24 07:49:10,478 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-24 07:49:10,578 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
+2023-01-24 07:49:11,890 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-01-24 07:49:11,932 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-01-24 07:49:11,933 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023-01-24 07:49:12,037 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-01-24 07:49:12,038 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3100 ms
+2023-01-24 07:49:12,274 ERROR [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig' defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'inMemoryUserDetailsManager' defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.provisioning.InMemoryUserDetailsManager]: Factory method 'inMemoryUserDetailsManager' threw exception; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'webSecurityConfig': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2023-01-24 07:49:12,317 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-01-24 07:49:12,341 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2023-01-24 07:49:12,357 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-24 07:49:12,390 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  webSecurityConfig defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]
+↑     ↓
+|  inMemoryUserDetailsManager defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2023-01-24 07:55:06,670 INFO  [restartedMain] com.tpe.SpringJwt2Application:Starting SpringJwt2Application using Java 11.0.16.1 on DESKTOP-5OH89VO with PID 45068 (C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes started by alikc in C:\Users\alikc\IdeaProjects\spring_jwt2)
+2023-01-24 07:55:06,673 INFO  [restartedMain] com.tpe.SpringJwt2Application:No active profile set, falling back to 1 default profile: "default"
+2023-01-24 07:55:06,783 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-24 07:55:06,784 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-24 07:55:08,541 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-24 07:55:08,636 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 82 ms. Found 2 JPA repository interfaces.
+2023-01-24 07:55:10,014 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-01-24 07:55:10,041 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-01-24 07:55:10,041 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023-01-24 07:55:10,174 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-01-24 07:55:10,175 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3390 ms
+2023-01-24 07:55:10,375 ERROR [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig' defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'inMemoryUserDetailsManager' defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.provisioning.InMemoryUserDetailsManager]: Factory method 'inMemoryUserDetailsManager' threw exception; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'webSecurityConfig': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2023-01-24 07:55:10,412 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-01-24 07:55:10,440 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2023-01-24 07:55:10,458 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-24 07:55:10,492 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  webSecurityConfig defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]
+↑     ↓
+|  inMemoryUserDetailsManager defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2023-01-24 07:57:43,232 INFO  [restartedMain] com.tpe.SpringJwt2Application:Starting SpringJwt2Application using Java 11.0.16.1 on DESKTOP-5OH89VO with PID 21540 (C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes started by alikc in C:\Users\alikc\IdeaProjects\spring_jwt2)
+2023-01-24 07:57:43,235 INFO  [restartedMain] com.tpe.SpringJwt2Application:No active profile set, falling back to 1 default profile: "default"
+2023-01-24 07:57:43,342 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-24 07:57:43,343 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-24 07:57:44,936 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-24 07:57:45,038 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+2023-01-24 07:57:46,736 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-01-24 07:57:46,762 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-01-24 07:57:46,762 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023-01-24 07:57:46,914 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-01-24 07:57:46,914 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3570 ms
+2023-01-24 07:57:47,137 ERROR [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig' defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'inMemoryUserDetailsManager' defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.provisioning.InMemoryUserDetailsManager]: Factory method 'inMemoryUserDetailsManager' threw exception; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'webSecurityConfig': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2023-01-24 07:57:47,181 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-01-24 07:57:47,210 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2023-01-24 07:57:47,229 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-24 07:57:47,264 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  webSecurityConfig defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]
+↑     ↓
+|  inMemoryUserDetailsManager defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2023-01-24 08:16:03,462 INFO  [restartedMain] com.tpe.SpringJwt2Application:Starting SpringJwt2Application using Java 11.0.16.1 on DESKTOP-5OH89VO with PID 65012 (C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes started by alikc in C:\Users\alikc\IdeaProjects\spring_jwt2)
+2023-01-24 08:16:03,464 INFO  [restartedMain] com.tpe.SpringJwt2Application:No active profile set, falling back to 1 default profile: "default"
+2023-01-24 08:16:03,593 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-24 08:16:03,594 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-24 08:16:05,387 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-24 08:16:05,504 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 99 ms. Found 2 JPA repository interfaces.
+2023-01-24 08:16:06,928 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-01-24 08:16:06,953 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-01-24 08:16:06,954 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023-01-24 08:16:07,073 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-01-24 08:16:07,073 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3478 ms
+2023-01-24 08:16:07,281 ERROR [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig' defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'inMemoryUserDetailsManager' defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.provisioning.InMemoryUserDetailsManager]: Factory method 'inMemoryUserDetailsManager' threw exception; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'webSecurityConfig': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2023-01-24 08:16:07,314 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-01-24 08:16:07,344 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2023-01-24 08:16:07,360 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-24 08:16:07,382 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  webSecurityConfig defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]
+↑     ↓
+|  inMemoryUserDetailsManager defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2023-01-24 08:20:04,843 INFO  [restartedMain] com.tpe.SpringJwt2Application:Starting SpringJwt2Application using Java 11.0.16.1 on DESKTOP-5OH89VO with PID 53840 (C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes started by alikc in C:\Users\alikc\IdeaProjects\spring_jwt2)
+2023-01-24 08:20:04,846 INFO  [restartedMain] com.tpe.SpringJwt2Application:No active profile set, falling back to 1 default profile: "default"
+2023-01-24 08:20:04,972 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-24 08:20:04,973 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-24 08:20:06,758 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-24 08:20:06,864 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+2023-01-24 08:20:08,245 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-01-24 08:20:08,269 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-01-24 08:20:08,269 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023-01-24 08:20:08,386 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-01-24 08:20:08,387 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3413 ms
+2023-01-24 08:20:08,622 ERROR [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig' defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'inMemoryUserDetailsManager' defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.provisioning.InMemoryUserDetailsManager]: Factory method 'inMemoryUserDetailsManager' threw exception; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'webSecurityConfig': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2023-01-24 08:20:08,663 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-01-24 08:20:08,689 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2023-01-24 08:20:08,706 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-24 08:20:08,738 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  webSecurityConfig defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]
+↑     ↓
+|  inMemoryUserDetailsManager defined in class path resource [org/springframework/boot/autoconfigure/security/servlet/UserDetailsServiceAutoConfiguration.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2023-01-24 08:24:13,973 INFO  [restartedMain] com.tpe.SpringJwt2Application:Starting SpringJwt2Application using Java 11.0.16.1 on DESKTOP-5OH89VO with PID 53948 (C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes started by alikc in C:\Users\alikc\IdeaProjects\spring_jwt2)
+2023-01-24 08:24:13,976 INFO  [restartedMain] com.tpe.SpringJwt2Application:No active profile set, falling back to 1 default profile: "default"
+2023-01-24 08:24:14,105 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-24 08:24:14,105 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-24 08:24:15,844 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-24 08:24:15,955 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 94 ms. Found 2 JPA repository interfaces.
+2023-01-24 08:24:17,425 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-01-24 08:24:17,450 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-01-24 08:24:17,450 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023-01-24 08:24:17,573 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-01-24 08:24:17,573 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3465 ms
+2023-01-24 08:24:17,783 ERROR [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig' defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.core.userdetails.UserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-01-24 08:24:17,822 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-01-24 08:24:17,848 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2023-01-24 08:24:17,869 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-24 08:24:17,906 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.tpe.config.WebSecurityConfig required a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' in your configuration.
+
+2023-01-24 09:06:44,210 INFO  [restartedMain] com.tpe.SpringJwt2Application:Starting SpringJwt2Application using Java 11.0.16.1 on DESKTOP-5OH89VO with PID 57776 (C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes started by alikc in C:\Users\alikc\IdeaProjects\spring_jwt2)
+2023-01-24 09:06:44,214 INFO  [restartedMain] com.tpe.SpringJwt2Application:No active profile set, falling back to 1 default profile: "default"
+2023-01-24 09:06:44,332 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-24 09:06:44,332 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-24 09:06:46,232 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-24 09:06:46,369 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 115 ms. Found 2 JPA repository interfaces.
+2023-01-24 09:06:47,813 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-01-24 09:06:47,833 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-01-24 09:06:47,834 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023-01-24 09:06:47,955 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-01-24 09:06:47,956 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3623 ms
+2023-01-24 09:06:48,168 ERROR [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig' defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.core.userdetails.UserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-01-24 09:06:48,206 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-01-24 09:06:48,235 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2023-01-24 09:06:48,254 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-24 09:06:48,298 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.tpe.config.WebSecurityConfig required a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' in your configuration.
+
+2023-01-24 09:16:42,117 INFO  [restartedMain] com.tpe.SpringJwt2Application:Starting SpringJwt2Application using Java 11.0.16.1 on DESKTOP-5OH89VO with PID 65288 (C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes started by alikc in C:\Users\alikc\IdeaProjects\spring_jwt2)
+2023-01-24 09:16:42,120 INFO  [restartedMain] com.tpe.SpringJwt2Application:No active profile set, falling back to 1 default profile: "default"
+2023-01-24 09:16:42,239 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-24 09:16:42,240 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-24 09:16:44,117 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-24 09:16:44,238 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 101 ms. Found 2 JPA repository interfaces.
+2023-01-24 09:16:45,888 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-01-24 09:16:45,910 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-01-24 09:16:45,911 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023-01-24 09:16:46,032 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-01-24 09:16:46,033 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3792 ms
+2023-01-24 09:16:46,248 ERROR [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig' defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.core.userdetails.UserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-01-24 09:16:46,289 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-01-24 09:16:46,317 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2023-01-24 09:16:46,334 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-24 09:16:46,362 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.tpe.config.WebSecurityConfig required a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' in your configuration.
+
+2023-01-24 09:34:18,264 INFO  [restartedMain] com.tpe.SpringJwt2Application:Starting SpringJwt2Application using Java 11.0.16.1 on DESKTOP-5OH89VO with PID 60128 (C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes started by alikc in C:\Users\alikc\IdeaProjects\spring_jwt2)
+2023-01-24 09:34:18,268 INFO  [restartedMain] com.tpe.SpringJwt2Application:No active profile set, falling back to 1 default profile: "default"
+2023-01-24 09:34:18,393 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-24 09:34:18,393 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-24 09:34:19,970 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-24 09:34:20,064 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
+2023-01-24 09:34:21,392 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-01-24 09:34:21,412 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-01-24 09:34:21,413 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023-01-24 09:34:21,526 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-01-24 09:34:21,526 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3132 ms
+2023-01-24 09:34:21,727 ERROR [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig' defined in file [C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes\com\tpe\config\WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.core.userdetails.UserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-01-24 09:34:21,764 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2023-01-24 09:34:21,786 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2023-01-24 09:34:21,800 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-24 09:34:21,829 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.tpe.config.WebSecurityConfig required a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' in your configuration.
+
+2023-01-24 09:37:54,896 INFO  [restartedMain] com.tpe.SpringJwt2Application:Starting SpringJwt2Application using Java 11.0.16.1 on DESKTOP-5OH89VO with PID 45912 (C:\Users\alikc\IdeaProjects\spring_jwt2\target\classes started by alikc in C:\Users\alikc\IdeaProjects\spring_jwt2)
+2023-01-24 09:37:54,900 INFO  [restartedMain] com.tpe.SpringJwt2Application:No active profile set, falling back to 1 default profile: "default"
+2023-01-24 09:37:55,007 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-24 09:37:55,008 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-24 09:37:56,893 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-24 09:37:57,024 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 116 ms. Found 2 JPA repository interfaces.
+2023-01-24 09:37:58,700 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2023-01-24 09:37:58,723 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2023-01-24 09:37:58,724 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023-01-24 09:37:58,843 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2023-01-24 09:37:58,844 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3836 ms
+2023-01-24 09:37:59,280 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-24 09:37:59,374 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.5.Final
+2023-01-24 09:37:59,678 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-24 09:37:59,891 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2023-01-24 09:38:00,273 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2023-01-24 09:38:00,305 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-01-24 09:38:01,431 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-24 09:38:01,442 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-24 09:38:01,955 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-24 09:38:02,296 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will not secure any request
+2023-01-24 09:38:02,987 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2023-01-24 09:38:02,994 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 4 endpoint(s) beneath base path '/actuator'
+2023-01-24 09:38:03,057 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-24 09:38:03,074 INFO  [restartedMain] com.tpe.SpringJwt2Application:Started SpringJwt2Application in 9.236 seconds (JVM running for 10.298)
+2023-01-24 09:38:57,440 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-24 09:38:57,448 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2023-01-24 09:38:57,471 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
